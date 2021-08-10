@@ -1,0 +1,92 @@
+
+#navbar{
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0%;
+   
+}
+.jumbotron{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+h6{
+    padding-top: 20px;
+}
+
+.card-section{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+    padding-left: 125px;
+}
+/*page_produit*/
+
+#produit{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*page_produitALT*/
+
+#product_card{
+   /* border: 1px solid burlywood;*/
+    height: 600px;
+    background-color: #ddd;
+}
+.innerCard{
+    display: flex;
+}
+.card{
+    margin-left: 50px;
+}
+#imgTopCard{
+    padding-top: 25px;
+    height: 475px;
+}
+.topImg{
+    height: 400px;
+    object-fit: cover;
+    padding-top: 25px;
+    
+}
+.itemCustom{
+    margin-top: 7px;
+    display: flex;
+    width: 730px;
+    justify-content: space-between;
+    
+}
+.imgCustom{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.productInfo{
+padding-top: 25px;
+margin-left: -20px;
+}
+hr.solid{
+    border-top: 3px solid #ddd;
+    margin-top: 20px;
+    width: 131%;
+    margin-left: -170px;
+}
+.crossSelling{
+    margin-top: 20px;
+}
+.crossProducts{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footerProduct{
+    margin-top: 500px;
+}
+
+
+
+
+
