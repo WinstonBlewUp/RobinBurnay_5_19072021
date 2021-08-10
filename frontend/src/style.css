@@ -79,11 +79,42 @@ hr.solid{
 .crossProducts{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 75px;
+}
 
+/*Avis clients*/
+
+#avisClient{
+    display: flex;
+    justify-content: space-between;
+}
+.starNotation{
+    display: flex;
+}
+/*Reassurance*/
+.reassurance{
+    display:flex;
+    justify-content: space-evenly;
+}
+.deliv{
+    margin-left: -37px;
+}
+.return{
+    margin-left: -15px;
+}
+.lock{
+    margin-left:-43px;
+}
+/*Media Section*/
+.mediaSection{
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
 #footerProduct{
-    margin-top: 500px;
+  
 }
 
 

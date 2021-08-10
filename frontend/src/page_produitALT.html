@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 </head>
 <body>
     <header>
@@ -54,7 +56,7 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <div  id="pageMainBody" class="container">
         <div class="container" id="products">
             <div class="container" id="product_card">
                 <div class="innerCard">
@@ -87,7 +89,7 @@
                 <h3>vous allez adorer ça !</h3>
                 <div class="crossProducts">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="oak">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="/Users/gaby/Documents/GitHub/RobinBurnay_5_19072021/backend/images/oak_1.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -101,7 +103,7 @@
                         </div>
                 
                 
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="nounours"> 
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="/Users/gaby/Documents/GitHub/RobinBurnay_5_19072021/backend/images/teddy_1.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -116,6 +118,59 @@
                     </div>
                 </div>
             </div>
+            <hr class="solid"></hr>
+        </div>
+        <div id="avisClient">
+            <div class="avisGeneral">
+                <h3>Avis</h3>
+                <div class="starNotation">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <p>(1 avis)</p>
+                </div>
+                <p>100% des clients recommandent ce produit</p>
+            </div>
+            <div class="avisRecent">
+                <h3>Avis le plus récent</h3>
+                <div class="starNotation">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <p>(1 avis)</p>
+                </div>
+                <p>Il y a 5 jours</p>
+                <div class="avisComm">
+                    <h4>Commentaires</h4>
+                    <p>Winston : <em>"Appareil vintage de très bonne qualité"</em></p>
+                </div>
+            </div>
+        </div>
+        <hr class="solid"></hr>
+        <div class="reassurance">
+            <div class="delivery">
+                <i class="bi bi-truck" style="font-size:xx-large;"></i>
+                <p class="reaText deliv">livraison gratuite</p>
+            </div>
+            <div class="return">
+                <i class="bi bi-arrow-90deg-left" style="font-size:xx-large;"></i>
+                <p class="reaText return">retour gratuit</p>
+            </div>
+            <div class="secure">
+                <i class="bi bi-shield-lock" style="font-size:xx-large;"></i>
+                <p class="reaText lock">paiement securisé</p>
+            </div>
+        </div>
+        <hr class="solid"></hr>
+        <div class="mediaSection">
+            <i class="bi bi-facebook" style="font-size:xx-large;"></i>
+            <i class="bi bi-twitter" style="font-size:xx-large;"></i>
+            <i class="bi bi-instagram" style="font-size:xx-large;"></i>
+            <i class="bi bi-pip" style="font-size:xx-large;"></i>
         </div>
     </div>
 
