@@ -17,9 +17,9 @@ h6{
 
 .card-section{
     display: flex;
-    border: 1px solid red;
+    
     justify-content: space-around;
-    padding-left: 125px;
+    padding-left: 65px;
 }
 /*page_produit*/
 
