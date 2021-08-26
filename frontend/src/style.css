@@ -21,15 +21,6 @@ h6{
     justify-content: space-around;
     padding-left: 65px;
 }
-#img01{
-    width: 100px;;
-}
-/*page_produit*/
-
-#produit{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 
 /*page_produitALT*/
 
@@ -44,9 +35,10 @@ h6{
 .card{
     margin-left: 50px;
 }
-#imgTopCard{
-    padding-top: 25px;
-    height: 475px;
+.imgTopCard{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
 }
 .topImg{
     height: 400px;
@@ -65,6 +57,11 @@ h6{
     height: 100px;
     width: 100px;
     object-fit: cover;
+}
+
+.btn-toolbar{
+    margin-left: 284px;
+    margin-top: 50px;
 }
 .productInfo{
 padding-top: 25px;
