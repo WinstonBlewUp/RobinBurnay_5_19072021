@@ -9,7 +9,7 @@ dataApi.then(async (responseData) => {
 
     try{
 //capture data api objet 0
-    for(i = 0; i<5; i++){}
+    
         const _id = response[0]._id;
         const name = response[0].name;
         const colors = response[0].colors;
