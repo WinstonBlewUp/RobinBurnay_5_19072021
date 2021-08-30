@@ -24,8 +24,7 @@ dataApi.then(async (responseData) => {
         console.log(imageUrl);
         console.log(description);
 
-        /*for(i = 0; i<5; i++){
-            console.log(response[i].name)}*/
+        
 
         //DOM objet affichage
 
