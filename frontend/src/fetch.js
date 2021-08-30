@@ -5,17 +5,17 @@ dataApi.then(async (responseData) => {
     //console.log(responseData);
 
     const response = await responseData.json();
-    console.log(response[0]);
+    console.log(response);
 
     try{
 //capture data api objet 0
-    
-        const _id = response[0]._id;
-        const name = response[0].name;
-        const colors = response[0].colors;
-        const price = response[0].price;
-        const imageUrl = response[0].imageUrl;
-        const description = response[0].description;
+    for(i =0; i<5; i++){
+        const _id = response[i]._id;
+        const name = response[i].name;
+        const colors = response[i].colors;
+        const price = response[i].price;
+        const imageUrl = response[i].imageUrl;
+        const description = response[i].description;
         
         console.log(_id);
         console.log(name);
@@ -24,7 +24,7 @@ dataApi.then(async (responseData) => {
         console.log(imageUrl);
         console.log(description);
 
-        
+    } 
 
         //DOM objet affichage
 
@@ -32,11 +32,11 @@ dataApi.then(async (responseData) => {
         const affichage_img01 = document.querySelector("#img01");
         const affichage_price = document.querySelector("#price");
         //affihage img
-        const img01 = `<img src="${imageUrl}" class="imgTopCard">`;
+        const img01 = `<img src="${imageUrl[i]}" class="imgTopCard">`;
         
         affichage_img01.insertAdjacentHTML("afterbegin", img01);
         affichage_name.innerHTML = name;
-        affichage_price.innerHTML = price;
+        affichage_price.innerHTML = price[i];
 
 
     } catch(err){
