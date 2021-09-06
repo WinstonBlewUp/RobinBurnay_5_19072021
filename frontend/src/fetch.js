@@ -10,6 +10,10 @@ dataApi.then(async (responseData) => {
     try{
 //capture data api objet 0
     for(i =0; i<5; i++){
+
+        response.forEach((element, i) => {
+            
+        });
         const _id = response[i]._id;
         const name = response[i].name;
         const colors = response[i].colors;
@@ -23,8 +27,8 @@ dataApi.then(async (responseData) => {
         console.log(price);
         console.log(imageUrl);
         console.log(description);
-
-    } 
+    }   
+      
 
         //DOM objet affichage
 
@@ -32,11 +36,11 @@ dataApi.then(async (responseData) => {
         const affichage_img01 = document.querySelector("#img01");
         const affichage_price = document.querySelector("#price");
         //affihage img
-        const img01 = `<img src="${imageUrl[i]}" class="imgTopCard">`;
+        const img01 = `<img src="${imageUrl}" class="imgTopCard">`;
         
         affichage_img01.insertAdjacentHTML("afterbegin", img01);
         affichage_name.innerHTML = name;
-        affichage_price.innerHTML = price[i];
+        affichage_price.innerHTML = price;
 
 
     } catch(err){
