@@ -21,7 +21,9 @@ h6{
     justify-content: space-around;
     padding-left: 65px;
 }
-
+li.item{
+    list-style-type: none;
+}
 /*page_produitALT*/
 
 #product_card{
