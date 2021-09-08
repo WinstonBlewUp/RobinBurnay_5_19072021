@@ -19,7 +19,7 @@ h6{
     display: flex;
     
     justify-content: space-around;
-    padding-left: 65px;
+    padding-left: -55px;
 }
 li.item{
     list-style-type: none;

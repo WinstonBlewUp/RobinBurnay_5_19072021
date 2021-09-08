@@ -5,7 +5,7 @@ dataApi.then(async (responseData) => {
     //console.log(responseData);
 
     const response = await responseData.json();
-    console.log(response);
+   // console.log(response);
 
     try{
 //capture data api objet 0
@@ -21,12 +21,12 @@ dataApi.then(async (responseData) => {
         const imageUrl = response[i].imageUrl;
         const description = response[i].description;
         
-        console.log(_id);
-        console.log(name);
-        console.log(colors);
-        console.log(price);
-        console.log(imageUrl);
-        console.log(description);
+        // console.log(_id);
+        // console.log(name);
+        // console.log(colors);
+        // console.log(price);
+        // console.log(imageUrl);
+        // console.log(description);
     }   
       
 
