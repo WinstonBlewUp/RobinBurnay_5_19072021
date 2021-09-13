@@ -27,6 +27,8 @@ const url_idSliced = queryString_url_id.slice(1);
                 affichage_price.innerHTML = price;
                 affichage_img.insertAdjacentHTML("afterbegin", image);
 
+                
+
             
             } catch(err){
                 console.log
