@@ -12,6 +12,6 @@
 
                     for(let i = 0; i<response.colors.length; i++){
                         const affichage_colors = document.querySelector(".colors")
-                        affichage_colors.innerHTML = colors[i];
+                        affichage_colors.innerHTML = colors;
                     }
         })
