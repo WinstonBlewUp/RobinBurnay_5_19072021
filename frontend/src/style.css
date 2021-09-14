@@ -50,56 +50,9 @@ li.item{
     
 }
 
- /* Dropdown Button */
- .dropbtn {
-    background-color: #0275d8 ;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-margin-left: 71px;
-width: 245px;
-border-radius: .3em;
-margin-top: 30px;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;} 
-
-
+#pet-select{
+    margin-left: 15px;
+}
 .itemCustom{
     margin-top: 7px;
     display: flex;
@@ -124,8 +77,8 @@ margin-left: -20px;
 hr.solid{
     border-top: 3px solid #ddd;
     margin-top: 20px;
-    width: 131%;
-    margin-left: -170px;
+    width: 100%;
+    
 }
 .crossSelling{
     margin-top: 20px;
@@ -141,7 +94,7 @@ hr.solid{
 
 #avisClient{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .starNotation{
     display: flex;
