@@ -2,8 +2,20 @@
 #navbar{
     width: 100%;
     margin-bottom: 50px;
-    padding: 0%;
-   
+    padding: 0%;  
+}
+#navbarFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    padding-left: 50%;
+}
+
+.bi-bag{
+    font-size: 30px;
+    margin-left: 1050px;
 }
 .jumbotron{
     margin-top: 50px;
@@ -21,6 +33,12 @@ h6{
     justify-content: space-around;
     padding-left: -55px;
 }
+
+#items{
+    
+    width: 96%;
+}
+
 li.item{
     list-style-type: none;
 }

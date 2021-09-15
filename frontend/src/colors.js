@@ -10,8 +10,20 @@
                 var colors = response.colors;
                     console.log(response.colors)
 
-                    for(let i = 0; i<response.colors.length; i++){
-                        const affichage_colors = document.querySelector(".colors")
-                        affichage_colors.innerHTML = colors;
+
+                    const optionQuantite = response.colors;
+                        let structureOptions = [];
+
+                    for(let j = 0; j < response.colors.length; j++){
+
+                        structureOptions +=
+                        `
+                        <option value="${j+1}">${optionQuantite[j]}</option>
+                        `;
+        
                     }
+
+                    const positionOption = document.querySelector("#colors_select");
+                    positionOption.innerHTML = structureOptions;
+                        
         })
