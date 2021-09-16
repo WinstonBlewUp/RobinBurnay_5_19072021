@@ -24,6 +24,9 @@
                     }
 
                     const positionOption = document.querySelector("#colors_select");
+                    
                     positionOption.innerHTML = structureOptions;
-                        
-        })
+        
+        });
+
+        
