@@ -1,17 +1,53 @@
 const dataPanier = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
         dataPanier.then(async (responseData) => {
-            console.log(responseData);
 
-            const idForm = document.querySelector("#colors_select");
-                console.log(idForm);
+            const response = await responseData.json();
+                console.log(response)
+            
+            const idForm = document.querySelector("#colors_select");   
 
-                const sendCart = document.querySelector("#order");
+                 
+
+                    sendCart = document.querySelector("#order");
+                        sendCart.addEventListener("click", (event) => {
+
+                            const choiceForm = idForm.value; 
+                    console.log(choiceForm); 
                     
+                    let optionProduit = {
+                        nomProduit : response.name,
+                        id : response._id,
+                        color : choiceForm,
+                        prix : (response.price/100).toFixed(2).replace(".",",")
+                    }
 
-                    sendCart.addEventListener("click", (event) =>{
-                        event.preventDefault();
+                    console.log(optionProduit);
 
-                        const choiceForm = idForm.value; 
-                            console.log(responseData);
-                    });
+                    let productLocalStorage = JSON.parse(localStorage.getItem("produit"));
+
+
+                    const popupConfirmation = () =>{
+                        if(window.confirm(`${response.name} couleur : ${choiceForm} a bien été ajouté au panier
+Consultez le panier OK ou continuer vos achats ANNULER`)){
+                            window.location.href$ = "panier.html";
+                        }else{
+                            window.location.href = "index.html";
+                        }
+                    };
+
+
+                    if(productLocalStorage){
+                        productLocalStorage.push(optionProduit);
+                        localStorage.setItem("produit", JSON.stringify(productLocalStorage));
+                        popupConfirmation();
+                    } else{
+                        productLocalStorage = [];
+                        productLocalStorage.push(optionProduit);
+                        localStorage.setItem("produit", JSON.stringify(productLocalStorage));
+
+                        console.log(productLocalStorage);
+                    }
+                        });
+                        
+                
         });
