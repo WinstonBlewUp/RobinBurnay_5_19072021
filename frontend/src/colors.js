@@ -2,13 +2,13 @@
 
    const dataColors = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
         dataColors.then(async (responseData) => {
-            console.log(responseData);
+            
 
             const response = await responseData.json();
-                console.log(response)
+                
 
                 var colors = response.colors;
-                    console.log(response.colors)
+                    
 
 
                     const optionQuantite = response.colors;

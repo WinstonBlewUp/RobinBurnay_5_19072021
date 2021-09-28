@@ -60,6 +60,7 @@ li.item{
     height: 95%;
     width: 95%;
     object-fit: cover;
+    margin-top: 13px;
 }
 .topImg{
     height: 400px;

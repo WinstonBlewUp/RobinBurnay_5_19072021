@@ -29,7 +29,7 @@ const dataPanier = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
                     const popupConfirmation = () =>{
                         if(window.confirm(`${response.name} couleur : ${choiceForm} a bien été ajouté au panier
 Consultez le panier OK ou continuer vos achats ANNULER`)){
-                            window.location.href$ = "panier.html";
+                            window.location.href = "panier.html";
                         }else{
                             window.location.href = "index.html";
                         }
@@ -46,8 +46,13 @@ Consultez le panier OK ou continuer vos achats ANNULER`)){
                         localStorage.setItem("produit", JSON.stringify(productLocalStorage));
 
                         console.log(productLocalStorage);
-                    }
+                    };
+
+                    //affichage produit panier
+                    console.log(productLocalStorage);
                         });
+
+                    
                         
-                
+           
         });

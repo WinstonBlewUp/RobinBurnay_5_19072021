@@ -2,13 +2,13 @@ fetch('http://localhost:3000/api/teddies')
     .then((response) => response.json())
     .then((response) =>{
 
-            console.log(response);
+            
 
         let getProducts = "";
 
         for(let i = 0; i<response.length; i++){
 
-            console.log(response[i].name);
+            
 
 
         getProducts += 
