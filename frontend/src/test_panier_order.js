@@ -23,7 +23,7 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
 
                             for(k = 0; k < registeredProducts.length; k++){
                                 
-                                StructureProduitPanier += 
+                                StructureProduitPanier = StructureProduitPanier +
                                 `
                                 <tr>
                                 <td class="old"><img src="${response[k].imageUrl}"
