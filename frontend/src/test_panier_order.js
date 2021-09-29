@@ -26,13 +26,14 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
                                 StructureProduitPanier = StructureProduitPanier +
                                 `
                                 <tr>
-                                <td class="old"><img src="${response[k].imageUrl}"
+                                <td class="old"><img src="${registeredProducts[k].imageUrl}"
                                 alt="ours en peluche" style="width:100px;"></td>
-                                <td class="old">${registeredProducts[k].name}</td>
+                                <td class="old">${registeredProducts[k].nomProduit}</td>
                                 <td class="old">${registeredProducts[k].color}</td>
-                                <td class="old">${(registeredProducts[k].price/100).toFixed(2).replace(".",",")}€</td>
-                            </tr>
-            `;
+                                <td class="old">${registeredProducts[k].prix}€</td>
+                                </tr>
+                                <button class="btn-del"> <i class="bi bi-trash"></i> </button>
+                                 `;
             console.log(registeredProducts);
                             }
             console.log(StructureProduitPanier);
