@@ -18,7 +18,7 @@
 
                         structureOptions +=
                         `
-                        <option value="${j+1}">${optionQuantite[j]}</option>
+                        <option value="${optionQuantite[j]}">${optionQuantite[j]}</option>
                         `;
         
                     }

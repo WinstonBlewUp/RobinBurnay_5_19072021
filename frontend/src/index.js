@@ -24,7 +24,7 @@ fetch('http://localhost:3000/api/teddies')
                                 <p class="card-text">${response[i].description}</p>
                                 <p class="card-text text-muted fs-5">${(response[i].price/100).toFixed(2).replace(".",",")}€ </p>
                                 <br />
-                                <a class="btn btn-outline-primary w-25" href="page_produitALT.html?${response[i]._id}">Voir Produit</a>
+                                <a class="btn btn-outline-primary w-25" href="product.html?${response[i]._id}">Voir Produit</a>
                             </div>
                         </div>
                     </div>

@@ -28,17 +28,18 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
                                 <tr>
                                 <td class="old"><img src="${response[k].imageUrl}"
                                 alt="ours en peluche" style="width:100px;"></td>
-                                <td class="old">${response[k].name}</td>
-                                <td class="old">${response[k].color}</td>
-                                <td class="old">${(response[k].price/100).toFixed(2).replace(".",",")}€</td>
+                                <td class="old">${registeredProducts[k].name}</td>
+                                <td class="old">${registeredProducts[k].color}</td>
+                                <td class="old">${(registeredProducts[k].price/100).toFixed(2).replace(".",",")}€</td>
                             </tr>
             `;
+            console.log(registeredProducts);
+                            }
             console.log(StructureProduitPanier);
-            console.log(panierVide);
-            console.log(optionProduit);
-             }
+            
              if(k == registeredProducts.length){
                 positionElementPanier.innerHTML = StructureProduitPanier;
              }
+             
                         }
             });
