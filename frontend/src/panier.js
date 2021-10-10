@@ -18,7 +18,8 @@ const dataPanier = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
                         nomProduit : response.name,
                         id : response._id,
                         color : choiceForm,
-                        prix : (response.price/100).toFixed(2).replace(".",",")
+                        prix : (response.price/100).toFixed(2).replace(".",","),
+                        imageUrl : response.imageUrl,
                     }
 
                     console.log(optionProduit);
@@ -44,6 +45,7 @@ Consultez le panier OK ou continuer vos achats ANNULER`)){
                         productLocalStorage = [];
                         productLocalStorage.push(optionProduit);
                         localStorage.setItem("produit", JSON.stringify(productLocalStorage));
+                        popupConfirmation();
 
                         console.log(productLocalStorage);
                     };

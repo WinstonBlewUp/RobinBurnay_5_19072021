@@ -143,6 +143,39 @@ hr.solid{
   
 }
 
+/*Panier*/
+.panier_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_produits{
+    border: 1px solid red;
+    width: 50%;
+}
+#item__select{
+    border: 2px solid blue;;
+}
+.products_order{
+    border: 1px solid blue;
+    padding: none;
+    
+
+}
+
+.btn-del{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    font-size: 25px;
+}
+.cancel_order{
+    margin-left: 610px;;
+}
+
 
 
 
