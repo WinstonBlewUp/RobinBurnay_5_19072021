@@ -33,14 +33,24 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
                                 
                                     <div class="products_order">
                             
-                                            <div class="card" style="width: 18rem;">
+                                            <div class="card-prod" style="width: 18rem;">
                                                 <img class="card-img-top" src="${registeredProducts[k].imageUrl}" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <p class="card-text">${registeredProducts[k].nomProduit}</p>
-                                                    <p class="card-text">${registeredProducts[k].color}</p>
-                                                    <p class="card-text">${registeredProducts[k].prix}€</p>
-                                                </div>
+                                                <div class="title_container">
+                                                    <div class="card-title"></div>   
+                                                        <h5 class="card_title">Nom</h5>
+                                                        <p class="card-text">${registeredProducts[k].nomProduit}</p>
+                                                    </div>
+                                                    <div class="card-title">
+                                                        <h5 class="card_title">Couleur</h5>
+                                                        <p class="card-text">${registeredProducts[k].color}</p>
+                                                    </div>
+                                                    <div class="card-title"> 
+                                                        <h5 class="card_title">Prix</h5>
+                                                        <p class="card-text">${registeredProducts[k].prix}€</p>
+                                                    </div>
+                                                </div>  
                                             </div>
+                                            
                                         
                                         <button class="btn-del delete__item"> <i class="bi bi-trash"></i> </button>
                                     </div>
@@ -56,6 +66,14 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
              }
              
                         }
+
+    //total prix commande
+    total = total + (registeredProducts.price);
+    console.log(total);                   
+    const cartTotal = document.querySelector(".cartTotal");
+    console.log(cartTotal);
+    const priceCart = `<h5 class=" cart-section card-title">Votre total est de :${(total/100).toFixed(2).replace(".",",")}€</h5>`;
+    cartTotal.innerHTML = priceCart;
                          
     // Btn supprimer article //
     const deleteItem = document.querySelectorAll(".delete__item");
