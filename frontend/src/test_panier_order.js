@@ -67,13 +67,25 @@ const dataOrder = fetch(`http://localhost:3000/api/teddies/${url_idSliced}`);
              
                         }
 
-    //total prix commande
-    total = total + (registeredProducts.price);
-    console.log(total);                   
-    const cartTotal = document.querySelector(".cartTotal");
-    console.log(cartTotal);
-    const priceCart = `<h5 class=" cart-section card-title">Votre total est de :${(total/100).toFixed(2).replace(".",",")}€</h5>`;
-    cartTotal.innerHTML = priceCart;
+    // //total prix commande
+    // let total = (registeredProducts.price);
+    // console.log(total);                   
+    // const cartTotal = document.querySelector(".cartTotal");
+    // console.log(cartTotal);
+    // const priceCart = `<h5 class="cart-section card-title">Votre total est de :${(total/100).toFixed(2).replace(".",",")}€</h5>`;
+    // cartTotal.innerHTML = priceCart;
+
+    let totalPriceCalc = [];
+
+    for (let m = 0; m < registeredProducts.length; m++){
+        let totalPriceProduct = registeredProducts[m].price;
+
+        totalPriceCalc.push(totalPriceProduct);
+        console.log(totalPriceCalc);
+    };
+
+
+
                          
     // Btn supprimer article //
     const deleteItem = document.querySelectorAll(".delete__item");
