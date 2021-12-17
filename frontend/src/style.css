@@ -155,11 +155,14 @@ hr.solid{
     justify-content: space-around;
 }
 
+
+
 .container_produits{
     
-    width: 100%%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 #item__select{
     
